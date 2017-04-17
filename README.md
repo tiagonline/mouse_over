@@ -62,7 +62,9 @@ Após a execução dos testes estará disponível um relatório na pasta \minutr
 obs.: Os screenshots estarão disponíveis no pé de cada funcionalidade do relatório.
 
 Por favor se sintam a vontade de entrar em contato comigo para qualquer dúvida ou auxílio.
-tiagonline@gmail.com ou 31 99218-8482
+- tiagonline@gmail.com ou 
+- 31 99218-8482
+
 Abraços!
 Att,
 Tiago Oliveira.
