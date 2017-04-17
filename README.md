@@ -34,7 +34,7 @@ npm install -g chromedriver
 
 # Configurando o ambiente:
 
-- Necessário ruby 2.3.3p222.
+- Necessário ruby 2.3.3
 - Instalando o bundler. Navegue na pasta \minutrade e execute o seguinte comando:
 
 ```ruby

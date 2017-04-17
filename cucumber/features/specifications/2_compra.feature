@@ -1,8 +1,7 @@
 #language: pt
 
-@hooks_login
-@login
-
+@hooks_compra
+@compra
 
 Funcionalidade: Login na loja exemplo de livros
 
@@ -13,6 +12,6 @@ Para que eu possa ter acesso ao sistema e realizar compras
 Cenario: Login com sucesso
 
     Dado que eu acesse a página principal do site
-    Quando eu clico no botão Entrar
-    E digito os campos obrigatórios para login
-    Entao eu acesso o Meu Painel
+    Quando eu navegue no menu (Livros /Informática / Java)
+    E procuro o livro de Java na tela e clico nele
+    Entao eu clico em Comprar

@@ -1,10 +1,8 @@
 Before '@hooks_login' do
 
-  
-  @Login = PaginaLogin.new
-  @login = "tiagonline@gmail.com"
-  @senha = "123456"
 
-  puts 'O email utilizado é ' + @login
-  puts 'A senha utilizada é ' + @senha
+  @Login = PaginaLogin.new
+  @login = "noreply@minutrade.com.br"
+  @senha = "minutrade"
+
 end

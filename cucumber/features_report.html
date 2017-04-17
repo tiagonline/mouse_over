@@ -438,3 +438,44 @@ d,e);d={top:b.top-e.top+j,left:b.left-e.left+i};"using"in b?b.using.call(a,d):f.
 f.top,left:d.left-f.left}},offsetParent:function(){return this.map(function(){for(var a=this.offsetParent||s.body;a&&!/^body|html$/i.test(a.nodeName)&&c.css(a,"position")==="static";)a=a.offsetParent;return a})}});c.each(["Left","Top"],function(a,b){var d="scroll"+b;c.fn[d]=function(f){var e=this[0],j;if(!e)return null;if(f!==w)return this.each(function(){if(j=wa(this))j.scrollTo(!a?f:c(j).scrollLeft(),a?f:c(j).scrollTop());else this[d]=f});else return(j=wa(e))?"pageXOffset"in j?j[a?"pageYOffset":
 "pageXOffset"]:c.support.boxModel&&j.document.documentElement[d]||j.document.body[d]:e[d]}});c.each(["Height","Width"],function(a,b){var d=b.toLowerCase();c.fn["inner"+b]=function(){return this[0]?c.css(this[0],d,false,"padding"):null};c.fn["outer"+b]=function(f){return this[0]?c.css(this[0],d,false,f?"margin":"border"):null};c.fn[d]=function(f){var e=this[0];if(!e)return f==null?null:this;if(c.isFunction(f))return this.each(function(j){var i=c(this);i[d](f.call(this,j,i[d]()))});return"scrollTo"in
 e&&e.document?e.document.compatMode==="CSS1Compat"&&e.document.documentElement["client"+b]||e.document.body["client"+b]:e.nodeType===9?Math.max(e.documentElement["client"+b],e.body["scroll"+b],e.documentElement["scroll"+b],e.body["offset"+b],e.documentElement["offset"+b]):f===w?c.css(e,d):this.css(d,typeof f==="string"?f:f+"px")}});A.jQuery=A.$=c})(window);
+
+  SCENARIOS = "h3[id^='scenario_'],h3[id^=background_]";
+
+  $(document).ready(function() {
+    $(SCENARIOS).css('cursor', 'pointer');
+    $(SCENARIOS).click(function() {
+      $(this).siblings().toggle(250);
+    });
+
+    $("#collapser").css('cursor', 'pointer');
+    $("#collapser").click(function() {
+      $(SCENARIOS).siblings().hide();
+    });
+
+    $("#expander").css('cursor', 'pointer');
+    $("#expander").click(function() {
+      $(SCENARIOS).siblings().show();
+    });
+  })
+
+  function moveProgressBar(percentDone) {
+    $("cucumber-header").css('width', percentDone +"%");
+  }
+  function makeRed(element_id) {
+    $('#'+element_id).css('background', '#C40D0D');
+    $('#'+element_id).css('color', '#FFFFFF');
+  }
+  function makeYellow(element_id) {
+    $('#'+element_id).css('background', '#FAF834');
+    $('#'+element_id).css('color', '#000000');
+  }
+
+</script></head><body><!-- Step count 0--><div class="cucumber"><div id="cucumber-header"><div id="label"><h1>Cucumber Features</h1></div><div id="summary"><p id="totals"></p><p id="duration"></p><div id="expand-collapse"><p id="expander">Expand All</p><p id="collapser">Collapse All</p></div></div></div><div class="feature"><pre class="comment"># language: pt<br/></pre><span class="tag">@hooks_login</span> <span class="tag">@login</span><h2><span class="val">Funcionalidade: Login na loja exemplo de livros</span></h2><p class="narrative">Eu, como cliente da loja exemplo de livros<br/>Desejo realizar Login<br/>Para que eu possa ter acesso ao sistema e realizar compras<br/></p><div class='scenario'><span class="scenario_file">features/specifications/1_login.feature:13</span><h3 id="scenario_1"><span class="keyword">Cenario:</span> <span class="val">Login com sucesso</span></h3><ol><li id='' class='step passed'><div class="step_name"><span class="keyword">Dado </span><span class="step val">que eu acesse a página principal do site</span></div><div class="step_file"><span>features/step_definitions/2_compra.rb:1</span></div></li> <script type="text/javascript">moveProgressBar('100.0');</script><li id='' class='step passed'><div class="step_name"><span class="keyword">Quando </span><span class="step val">eu clico no botão Entrar</span></div><div class="step_file"><span>features/step_definitions/1_login.rb:1</span></div></li> <script type="text/javascript">moveProgressBar('100.0');</script><li id='' class='step passed'><div class="step_name"><span class="keyword">E </span><span class="step val">digito os campos obrigatórios para login</span></div><div class="step_file"><span>features/step_definitions/1_login.rb:5</span></div></li><li class="step message">Usuário noreply@minutrade.com.br logado com a senha minutrade</li> <script type="text/javascript">moveProgressBar('100.0');</script><li id='' class='step passed'><div class="step_name"><span class="keyword">Entao </span><span class="step val">eu acesso o Meu Painel</span></div><div class="step_file"><span>features/step_definitions/1_login.rb:12</span></div></li> <script type="text/javascript">moveProgressBar('100.0');</script><span class="embed"><a href="" onclick="img=document.getElementById('img_0'); img.style.display = (img.style.display == 'none' ? 'block' : 'none');return false">SCREENSHOT</a><br>&nbsp;
+          <img id="img_0" style="display: none" src="screenshots/test_passed/run_2017_04_17/login_com_sucesso.png"/></span></ol></div></div><div class="feature"><pre class="comment"># language: pt<br/></pre><span class="tag">@hooks_compra</span> <span class="tag">@compra</span><h2><span class="val">Funcionalidade: Login na loja exemplo de livros</span></h2><p class="narrative">Eu, como cliente da loja exemplo de livros<br/>Desejo realizar Login<br/>Para que eu possa ter acesso ao sistema e realizar compras<br/></p><div class='scenario'><span class="scenario_file">features/specifications/2_compra.feature:12</span><h3 id="scenario_2"><span class="keyword">Cenario:</span> <span class="val">Login com sucesso</span></h3><ol><li id='' class='step passed'><div class="step_name"><span class="keyword">Dado </span><span class="step val">que eu acesse a página principal do site</span></div><div class="step_file"><span>features/step_definitions/2_compra.rb:1</span></div></li> <script type="text/javascript">moveProgressBar('100.0');</script><li id='' class='step passed'><div class="step_name"><span class="keyword">Quando </span><span class="step val">eu navegue no menu (Livros /Informática / Java)</span></div><div class="step_file"><span>features/step_definitions/2_compra.rb:5</span></div></li> <script type="text/javascript">moveProgressBar('100.0');</script><script>makeRed('cucumber-header');makeRed('scenario_2');</script><li id='' class='step failed'><div class="step_name"><span class="keyword">E </span><span class="step val">procuro o livro de Java na tela e clico nele</span></div><div class="step_file"><span>features/step_definitions/2_compra.rb:13</span></div><div class="message"><pre>Ambiguous match, found 2 elements matching xpath "//a[text()='[PRODUTO DE EXEMPLO] - Use a Cabeça! Java']" (Capybara::Ambiguous)</pre></div><div class="backtrace"><pre>./features/step_definitions/2_compra.rb:14:in `/^procuro o livro de Java na tela e clico nele$/'
+features/specifications/2_compra.feature:16:in `E procuro o livro de Java na tela e clico nele'
+./features/step_definitions/2_compra.rb:14:in `/^procuro o livro de Java na tela e clico nele$/'
+features/specifications/2_compra.feature:16:in `E procuro o livro de Java na tela e clico nele'</pre></div><pre class="ruby"><code><span class="linenum">12</span>
+<span class="linenum">13</span><span class="constant">Quando</span><span class="punct">(/</span><span class="regex">^procuro o livro de Java na tela e clico nele$</span><span class="punct">/)</span> <span class="keyword">do</span>
+<span class="offending"><span class="linenum">14</span>  <span class="ident">page</span><span class="punct">.</span><span class="ident">find</span><span class="punct">(</span><span class="symbol">:xpath</span><span class="punct">,</span> <span class="punct">&quot;</span><span class="string">//a[text()='[PRODUTO DE EXEMPLO] - Use a Cabeça! Java']</span><span class="punct">&quot;).</span><span class="ident">click</span></span>
+<span class="linenum">15</span><span class="keyword">end</span></code></pre></li> <script type="text/javascript">moveProgressBar('100.0');</script><li id='' class='step skipped'><div class="step_name"><span class="keyword">Entao </span><span class="step val">eu clico em Comprar</span></div><div class="step_file"><span>features/step_definitions/2_compra.rb:17</span></div></li> <script type="text/javascript">moveProgressBar('100.0');</script><span class="embed"><a href="" onclick="img=document.getElementById('img_1'); img.style.display = (img.style.display == 'none' ? 'block' : 'none');return false">SCREENSHOT</a><br>&nbsp;
+          <img id="img_1" style="display: none" src="screenshots/test_failed/run_2017_04_17/login_com_sucesso.png"/></span></ol></div></div><script type="text/javascript">document.getElementById('duration').innerHTML = "Finished in <strong>1m35.036s seconds</strong>";</script><script type="text/javascript">document.getElementById('totals').innerHTML = "2 scenarios (1 failed, 1 passed)<br />8 steps (1 failed, 1 skipped, 6 passed)";</script></div></body></html>
