@@ -1,6 +1,7 @@
 # Agile Tester - Tiago Oliveira Silva
   Testes funcionais sobre o webapp lojaexemplodelivros. Os testes foram desenvolvidos com o framework Cucumber, Capybara para os step definitions e Rspec para validação dos resultados esperados. O projeto está estruturado utilizando padrão page objects em linguagem Ruby. Um relatório é criado no final da execução dos testes em HTML. Caso tenha interesse, o projeto poderá ser colocado no Github e ser executado pela ferramenta de ingração contínua, Circle Ci.
 
+[![CircleCI](https://circleci.com/gh/tiagonline/mouse_over.svg?style=svg)](https://circleci.com/gh/tiagonline/mouse_over)
 
 # O projeto está estruturado da seguinte forma:
 
