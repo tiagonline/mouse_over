@@ -48,7 +48,6 @@ Execute o seguinte comando dentro da raiz do projeto:
 ```ruby
 bundle install
 ```
-Execute o comando "bundle install" na pasta ProcessoRD.
 
 # Executando os testes:
 
@@ -61,3 +60,9 @@ cucumber
 # Relatório dos testes em HTML:
 Após a execução dos testes estará disponível um relatório na pasta \minutrade\cucumber\features_report.html
 obs.: Os screenshots estarão disponíveis no pé de cada funcionalidade do relatório.
+
+Por favor se sintam a vontade de entrar em contato comigo para qualquer dúvida ou auxílio.
+tiagonline@gmail.com ou 31 99218-8482
+Abraços!
+Att,
+Tiago Oliveira.
