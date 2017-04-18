@@ -3,7 +3,6 @@
 @hooks_login
 @login
 
-
 Funcionalidade: Login na loja exemplo de livros
 
 Eu, como cliente da loja exemplo de livros

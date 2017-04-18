@@ -1,7 +1,7 @@
 #language: pt
 
 @hooks_compra
-@compra
+@compra1
 
 Funcionalidade: Compra do livro de Java
 
