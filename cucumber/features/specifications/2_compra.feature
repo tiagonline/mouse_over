@@ -3,15 +3,15 @@
 @hooks_compra
 @compra
 
-Funcionalidade: Login na loja exemplo de livros
+Funcionalidade: Compra do livro de Java
 
 Eu, como cliente da loja exemplo de livros
-Desejo realizar Login
-Para que eu possa ter acesso ao sistema e realizar compras
+Desejo comprar um livro de Java e colocá-lo no carrinho de compras
 
-Cenario: Login com sucesso
+Cenário: Compra do livro de Java
 
     Dado que eu acesse a página principal do site
     Quando eu navegue no menu (Livros /Informática / Java)
     E procuro o livro de Java na tela e clico nele
-    Entao eu clico em Comprar
+    Então eu clico em Comprar
+    E clico em Continuar Comprando

@@ -12,7 +12,7 @@ Before do |feature|
   end
 
   ## set default max wait and maximize browser
-  Capybara.default_max_wait_time = 60
+  Capybara.default_max_wait_time = 10
   unless BROWSER.eql?('poltergeist')
     Capybara.current_session.driver.browser.manage.window.maximize
   end
